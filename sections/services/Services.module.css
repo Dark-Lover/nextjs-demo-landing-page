@@ -1,0 +1,21 @@
+.services {
+  min-height: 100vh;
+  /* background-color: #2980b9; */
+  padding: 2rem 3rem;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.service_body {
+  border: 2px solid #1a64b8;
+  width: 400px;
+  padding: 1rem 2rem;
+}
+
+.service_title {
+}
