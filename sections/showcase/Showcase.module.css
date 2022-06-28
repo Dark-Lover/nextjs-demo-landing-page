@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 50%);
   padding: 2rem 3rem;
   align-items: center;
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
   position: relative;
   overflow: hidden;
 }
@@ -142,5 +142,6 @@
   .controles {
     margin: auto;
     margin-bottom: 2rem;
+    flex-direction: column;
   }
 }
