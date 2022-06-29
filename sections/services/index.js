@@ -5,10 +5,14 @@ function OurServices() {
     <section className={styles.services}>
       <div className={styles.title}>Our Services</div>
       <div className={styles.container}>
-        <Service />
-        <Service />
-        <Service />
-        <Service />
+        <div className={styles.left_side}>
+          <Service />
+          <Service />
+        </div>
+        <div className={styles.right_side}>
+          <Service />
+          <Service />
+        </div>
       </div>
     </section>
   );

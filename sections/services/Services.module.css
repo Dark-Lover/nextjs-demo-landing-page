@@ -1,6 +1,5 @@
 .services {
   min-height: 100vh;
-  /* background-color: #2980b9; */
   padding: 2rem 3rem;
 }
 
@@ -16,9 +15,24 @@
   grid-template-columns: auto auto;
   gap: 2rem;
 }
+.left_side,
+.right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.right_side {
+  padding: 6rem 0;
+}
 
 @media (max-width: 768px) {
+  .services {
+    padding: 1rem;
+  }
   .container {
     grid-template-columns: auto;
+  }
+  .right_side {
+    padding: 0;
   }
 }

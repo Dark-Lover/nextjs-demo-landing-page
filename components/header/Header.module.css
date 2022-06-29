@@ -59,6 +59,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    min-height: auto;
+  }
   .menu_icon {
     display: flex;
   }

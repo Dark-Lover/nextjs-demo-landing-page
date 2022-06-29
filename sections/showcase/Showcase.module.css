@@ -124,6 +124,12 @@
 @media screen and (max-width: 768px) {
   .showcase {
     grid-template-columns: auto;
+    padding: 0.5rem 1.3rem;
+    min-height: auto;
+  }
+  .showcase::before {
+    left: 400px;
+    top: -450px;
   }
   .right {
     order: 1;
@@ -132,16 +138,17 @@
     order: 2;
   }
   .left .heading {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
+    margin: 0.5rem 0;
   }
   .left .lead {
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 0.5rem;
   }
   .controles {
-    margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     flex-direction: column;
   }
 }
