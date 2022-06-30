@@ -2,7 +2,7 @@ import Service from "../../components/service";
 import styles from "./Services.module.css";
 function OurServices() {
   return (
-    <section className={styles.services}>
+    <section className={styles.services} id="services">
       <div className={styles.title}>Our Services</div>
       <div className={styles.container}>
         <div className={styles.left_side}>

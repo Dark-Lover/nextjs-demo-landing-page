@@ -8,6 +8,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
 }
 .logo {
   color: #2c3e50;
@@ -27,9 +31,6 @@
   text-transform: uppercase;
   cursor: pointer;
   padding: 0.3rem;
-}
-
-.nav_items li:hover {
 }
 
 .nav_items li a {
@@ -62,6 +63,9 @@
   .header {
     min-height: auto;
   }
+  .brand {
+    padding: 1rem;
+  }
   .menu_icon {
     display: flex;
   }
@@ -78,7 +82,7 @@
     z-index: 100;
   }
   .nav_closed {
-    top: -1000px;
+    top: -1500px;
   }
 
   .nav_items {

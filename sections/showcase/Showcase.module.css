@@ -3,9 +3,10 @@
   grid-template-columns: repeat(2, 50%);
   padding: 2rem 3rem;
   align-items: center;
-  min-height: calc(100vh - 64px);
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
+  /* padding-top: 64px; */
 }
 .showcase::before {
   content: "";
@@ -54,6 +55,7 @@
 .controles {
   display: flex;
   gap: 1rem;
+  margin: 0 auto;
 }
 
 .primary,
@@ -150,5 +152,9 @@
   .controles {
     margin-bottom: 0.5rem;
     flex-direction: column;
+  }
+  .primary,
+  .secondary {
+    width: 250px;
   }
 }

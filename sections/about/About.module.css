@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  padding: 2rem 3rem;
+}
+
+.about_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about_left {
+  flex: 1;
+}
+.about_left img {
+  object-fit: cover;
+}
+.about_right {
+  flex: 1;
+  height: 100%;
+}
+
+.about_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_right .section_title {
+  color: gray;
+  font-size: 1rem;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
+.about_right .about_heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #8e44ad;
+}
+
+.about_right .about_desc {
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.about_right .check_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about_right .check_list .check_item {
+  width: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.about_right .check_list .check_item svg {
+  color: #8e44ad;
+}
+.about_right .check_list .check_item span {
+  margin-left: 0.5rem;
+}
+
+.about_right .learn {
+  background-color: white;
+  padding: 1rem 2rem;
+  max-width: 200px;
+  border: 1px solid gray;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  transition: all 0.2s ease-in-out;
+}
+.about_right .learn:hover {
+  background-color: gray;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .about_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
