@@ -4,31 +4,13 @@ import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import { links } from "../../utils/Links";
 import ShowCase from "../../sections/showcase";
-const links = [
-  {
-    path: "/",
-    display: "Home",
-  },
-  {
-    path: "/#services",
-    display: "Services",
-  },
-  {
-    path: "/#about",
-    display: "About",
-  },
-  {
-    path: "/#contact",
-    display: "Contact",
-  },
-];
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-  console.log(router);
+
   return (
     <header className={styles.header}>
       <div className={styles.brand}>
@@ -47,6 +29,7 @@ function Header() {
                       className={
                         router.asPath === link.path ? styles.active_item : ""
                       }
+                      onClick={() => setIsOpen(false)}
                     >
                       {link.display}
                     </a>

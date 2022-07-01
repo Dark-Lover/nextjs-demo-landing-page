@@ -12,6 +12,7 @@
   width: 100%;
   z-index: 1000;
   background-color: white;
+  max-width: 1440px;
 }
 .logo {
   color: #2c3e50;

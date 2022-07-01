@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 import Image from "next/image";
 import { BsCheckLg } from "react-icons/bs";
-import { style } from "@mui/system";
+
 const meanings = [
   {
     title: "Market diagnose",
